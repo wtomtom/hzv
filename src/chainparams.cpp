@@ -93,7 +93,7 @@ public:
         nTargetTimespan = 30; // vizeh: 30 seconds
         nTargetSpacing = 30;  // vizeh: 30 seconds
         nLastPOWBlock = 50000;
-        nMaturity = 50;
+        nMaturity = 5;
         nModifierUpdateBlock = 1;
         const char* pszTimestamp = "VIZEH NEXT MONEY REVOLUTION";
         CMutableTransaction txNew;
@@ -114,11 +114,9 @@ public:
         assert(hashGenesisBlock == uint256("0x00000d5c781fe3e37acb47fd4459054db41c6aa2d57c9f374dd57b3edfd3638e"));
         assert(genesis.hashMerkleRoot == uint256("0xd5f89b250067e9e3b6639e6f503e91f59a40b5e9d19135db80ff854014a8ae39"));
 		
-        vSeeds.push_back(CDNSSeedData("01", "35.185.126.46"));
-	vSeeds.push_back(CDNSSeedData("02", "35.231.51.95"));
-        vSeeds.push_back(CDNSSeedData("03", "35.230.182.167"));
-	vSeeds.push_back(CDNSSeedData("04", "35.230.164.165"));
-  
+        vSeeds.push_back(CDNSSeedData("01", "104.196.147.128"));
+	vSeeds.push_back(CDNSSeedData("02", "35.231.122.155"));
+      
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 45);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 107);
         base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 212);
